@@ -20,6 +20,39 @@
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Fontfabric - Nexa Black Italic.ttf</string>
+		<string>Fontfabric - Nexa Black.ttf</string>
+		<string>Fontfabric - Nexa Bold Italic.ttf</string>
+		<string>Fontfabric - Nexa Bold.ttf</string>
+		<string>Fontfabric - Nexa Book Italic.ttf</string>
+		<string>Fontfabric - Nexa Book.ttf</string>
+		<string>Fontfabric - Nexa Heavy Italic.ttf</string>
+		<string>Fontfabric - Nexa Heavy.ttf</string>
+		<string>Fontfabric - Nexa Light Italic.ttf</string>
+		<string>Fontfabric - Nexa Light.ttf</string>
+		<string>Fontfabric - Nexa Thin Italic.ttf</string>
+		<string>Fontfabric - Nexa Thin.ttf</string>
+		<string>Fontfabric - Nexa XBold Italic.ttf</string>
+		<string>Fontfabric - Nexa XBold.ttf</string>
+		<string>Fontfabric - Nexa-RegularItalic.otf</string>
+		<string>Fontfabric - Nexa.ttf</string>
+		<string>Fontfabric - NexaBlack.otf</string>
+		<string>Fontfabric - NexaBlackItalic.otf</string>
+		<string>Fontfabric - NexaBold.otf</string>
+		<string>Fontfabric - NexaBoldItalic.otf</string>
+		<string>Fontfabric - NexaBook.otf</string>
+		<string>Fontfabric - NexaBookItalic.otf</string>
+		<string>Fontfabric - NexaHeavy.otf</string>
+		<string>Fontfabric - NexaHeavyItalic.otf</string>
+		<string>Fontfabric - NexaLight.otf</string>
+		<string>Fontfabric - NexaLightItalic.otf</string>
+		<string>Fontfabric - NexaThin.otf</string>
+		<string>Fontfabric - NexaThinItalic.otf</string>
+		<string>Fontfabric - NexaXBold.otf</string>
+		<string>Fontfabric - NexaXBoldItalic.otf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -28,6 +61,8 @@
 	<array>
 		<string>armv7</string>
 	</array>
+	<key>UIStatusBarStyle</key>
+	<string>UIStatusBarStyleLightContent</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -41,5 +76,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIViewControllerBasedStatusBarAppearance</key>
+	<true/>
 </dict>
 </plist>

@@ -1,4 +1,31 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18B75" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Country" representedClassName=".Country" syncable="YES">
+        <attribute name="alpha2Code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="alpha3Code" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="altSpellings" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="area" optional="YES" attributeType="Float" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="borders" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="callingCodes" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="capital" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cioc" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="currencies" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="demonym" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="flag" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="languages" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="latlng" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="nativeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numericCode" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="population" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="region" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="regionalBlocs" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="subregion" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="timezones" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="topLevelDomain" optional="YES" attributeType="Transformable" syncable="YES"/>
+        <attribute name="translations" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Country" positionX="-63" positionY="-18" width="128" height="390"/>
+    </elements>
 </model>

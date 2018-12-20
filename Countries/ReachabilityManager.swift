@@ -2,57 +2,58 @@
 //  ReachabilityManager.swift
 //  NetworkStatusMonitor
 //
-//  Copyright © 2016 Innofied Solution Pvt. Ltd. All rights reserved.
 //
 
 import Foundation
-import ReachabilitySwift
+import Reachability
 
 class ReachabilityManager: NSObject {
     
     static let shared = ReachabilityManager()
     
-    // Boolean to track network reachability
-    var isNetworkAvailable : Bool {
-        return reachabilityStatus != .notReachable
-    }
-    
-    // Tracks current NetworkStatus (notReachable, reachableViaWiFi, reachableViaWWAN)
-    var reachabilityStatus: Reachability.NetworkStatus = .notReachable
-    
-    // Reachibility instance for Network status monitoring
+    //declare this property where it won't go out of scope relative to your listener
     let reachability = Reachability()!
     
-    // Called whenever there is a change in NetworkReachibility Status
+    // 3. Boolean to track network reachability
+    var isNetworkAvailable : Bool {
+        return reachabilityStatus != .none
+    }
+    // 4. Tracks current NetworkStatus (notReachable, reachableViaWiFi, reachableViaWWAN)
+    var reachabilityStatus: Reachability.Connection = .none
+    // 5. Reachability instance for Network status monitoring
+    
+    
+    /// Called whenever there is a change in NetworkReachibility Status
+    ///
+    /// — parameter notification: Notification with the Reachability instance
     @objc func reachabilityChanged(notification: Notification) {
         let reachability = notification.object as! Reachability
-        switch reachability.currentReachabilityStatus {
-        case .notReachable:
-            debugPrint("Network became unreachable")
-        case .reachableViaWiFi:
-            debugPrint("Network reachable through WiFi")
-        case .reachableViaWWAN:
-            debugPrint("Network reachable through Cellular Data")
+        switch reachability.connection {
+        case .none:
+            print("Network became unreachable")
+        case .wifi:
+            print("Network reachable through WiFi")
+        case .cellular:
+            print("Network reachable through Cellular Data")
         }
     }
     
-    // Starts monitoring the network availability status
+    /// Starts monitoring the network availability status
     func startMonitoring() {
         NotificationCenter.default.addObserver(self,
                                                selector: #selector(self.reachabilityChanged),
-                                               name: ReachabilityChangedNotification,
+                                               name: Notification.Name.reachabilityChanged,
                                                object: reachability)
-        do {
+        do{
             try reachability.startNotifier()
-        } catch{
-            debugPrint("Could not start reachability notifier")
+        } catch {
+            print("Could not start reachability notifier")
         }
     }
     
-    // Stops monitoring the network availability status
+    /// Stops monitoring the network availability status
     func stopMonitoring(){
         reachability.stopNotifier()
-        NotificationCenter.default.removeObserver(self, name: ReachabilityChangedNotification,
-                                                  object: reachability)
+        NotificationCenter.default.removeObserver(self,  name: Notification.Name.reachabilityChanged, object: reachability)
     }
 }

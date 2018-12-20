@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6CDDC47730E83518715175B9 /* Pods_Countries.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B40B916B69A5C63CD43F4474 /* Pods_Countries.framework */; };
+		9A5A99A075FE6D5C60C0F821 /* Pods_CountriesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CFE746B9C3214C5650D3AB49 /* Pods_CountriesTests.framework */; };
+		BE27568421CB6F0B002BCB23 /* MappedCountry.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE27568321CB6F0B002BCB23 /* MappedCountry.swift */; };
+		BE27568621CBAA14002BCB23 /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE27568521CBAA14002BCB23 /* ReachabilityManager.swift */; };
+		BE27568D21CC02F0002BCB23 /* Country+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE27568B21CC02F0002BCB23 /* Country+CoreDataClass.swift */; };
+		BE27568E21CC02F0002BCB23 /* Country+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE27568C21CC02F0002BCB23 /* Country+CoreDataProperties.swift */; };
 		BE7A457F21C8FEEF00534688 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A457E21C8FEEF00534688 /* AppDelegate.swift */; };
 		BE7A458121C8FEEF00534688 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A458021C8FEEF00534688 /* ViewController.swift */; };
 		BE7A458421C8FEEF00534688 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7A458221C8FEEF00534688 /* Main.storyboard */; };
@@ -15,6 +21,39 @@
 		BE7A458C21C8FEF500534688 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE7A458A21C8FEF500534688 /* LaunchScreen.storyboard */; };
 		BE7A459721C8FEF500534688 /* CountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A459621C8FEF500534688 /* CountriesTests.swift */; };
 		BE7A45A221C8FEF500534688 /* CountriesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A45A121C8FEF500534688 /* CountriesUITests.swift */; };
+		BE7A45B021C9358D00534688 /* NetworkingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A45AF21C9358D00534688 /* NetworkingManager.swift */; };
+		BE7A45B221C93D4400534688 /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE7A45B121C93D4400534688 /* CountryDetailViewController.swift */; };
+		BE7A45D421CAB6B000534688 /* Fontfabric - NexaBlackItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45B621CAB6B000534688 /* Fontfabric - NexaBlackItalic.otf */; };
+		BE7A45D521CAB6B000534688 /* Fontfabric - NexaHeavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45B721CAB6B000534688 /* Fontfabric - NexaHeavy.otf */; };
+		BE7A45D621CAB6B000534688 /* Fontfabric - NexaXBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45B821CAB6B000534688 /* Fontfabric - NexaXBoldItalic.otf */; };
+		BE7A45D721CAB6B000534688 /* Fontfabric - NexaBookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45B921CAB6B000534688 /* Fontfabric - NexaBookItalic.otf */; };
+		BE7A45D821CAB6B000534688 /* Fontfabric - Nexa Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45BA21CAB6B000534688 /* Fontfabric - Nexa Light.ttf */; };
+		BE7A45D921CAB6B000534688 /* Fontfabric - Nexa Light Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45BB21CAB6B000534688 /* Fontfabric - Nexa Light Italic.ttf */; };
+		BE7A45DA21CAB6B000534688 /* Fontfabric - Nexa Heavy Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45BC21CAB6B000534688 /* Fontfabric - Nexa Heavy Italic.ttf */; };
+		BE7A45DB21CAB6B000534688 /* Fontfabric - Nexa Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45BD21CAB6B000534688 /* Fontfabric - Nexa Heavy.ttf */; };
+		BE7A45DC21CAB6B000534688 /* Fontfabric - NexaLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45BE21CAB6B000534688 /* Fontfabric - NexaLightItalic.otf */; };
+		BE7A45DD21CAB6B000534688 /* Fontfabric - NexaHeavyItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45BF21CAB6B000534688 /* Fontfabric - NexaHeavyItalic.otf */; };
+		BE7A45DE21CAB6B000534688 /* Fontfabric - NexaLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C021CAB6B000534688 /* Fontfabric - NexaLight.otf */; };
+		BE7A45DF21CAB6B000534688 /* Fontfabric - NexaBoldItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C121CAB6B000534688 /* Fontfabric - NexaBoldItalic.otf */; };
+		BE7A45E021CAB6B000534688 /* Fontfabric - Nexa-RegularItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C221CAB6B000534688 /* Fontfabric - Nexa-RegularItalic.otf */; };
+		BE7A45E121CAB6B000534688 /* Fontfabric - NexaThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C321CAB6B000534688 /* Fontfabric - NexaThinItalic.otf */; };
+		BE7A45E221CAB6B000534688 /* Fontfabric - NexaBlack.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C421CAB6B000534688 /* Fontfabric - NexaBlack.otf */; };
+		BE7A45E321CAB6B000534688 /* Fontfabric - Nexa Thin Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C521CAB6B000534688 /* Fontfabric - Nexa Thin Italic.ttf */; };
+		BE7A45E421CAB6B000534688 /* Fontfabric - Nexa.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C621CAB6B000534688 /* Fontfabric - Nexa.ttf */; };
+		BE7A45E521CAB6B000534688 /* Fontfabric - NexaThin.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C721CAB6B000534688 /* Fontfabric - NexaThin.otf */; };
+		BE7A45E621CAB6B000534688 /* Fontfabric - Nexa Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C821CAB6B000534688 /* Fontfabric - Nexa Thin.ttf */; };
+		BE7A45E721CAB6B000534688 /* Fontfabric - Nexa Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45C921CAB6B000534688 /* Fontfabric - Nexa Bold.ttf */; };
+		BE7A45E821CAB6B000534688 /* Fontfabric - NexaBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45CA21CAB6B000534688 /* Fontfabric - NexaBold.otf */; };
+		BE7A45E921CAB6B000534688 /* Fontfabric - Nexa Black Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45CB21CAB6B000534688 /* Fontfabric - Nexa Black Italic.ttf */; };
+		BE7A45EA21CAB6B000534688 /* Fontfabric - Nexa XBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45CC21CAB6B000534688 /* Fontfabric - Nexa XBold.ttf */; };
+		BE7A45EB21CAB6B000534688 /* Fontfabric - Nexa Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45CD21CAB6B000534688 /* Fontfabric - Nexa Book.ttf */; };
+		BE7A45EC21CAB6B000534688 /* Fontfabric - NexaBook.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45CE21CAB6B000534688 /* Fontfabric - NexaBook.otf */; };
+		BE7A45ED21CAB6B000534688 /* Fontfabric - Nexa XBold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45CF21CAB6B000534688 /* Fontfabric - Nexa XBold Italic.ttf */; };
+		BE7A45EE21CAB6B000534688 /* Fontfabric - Nexa Book Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45D021CAB6B000534688 /* Fontfabric - Nexa Book Italic.ttf */; };
+		BE7A45EF21CAB6B000534688 /* Fontfabric - Nexa Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45D121CAB6B000534688 /* Fontfabric - Nexa Black.ttf */; };
+		BE7A45F021CAB6B000534688 /* Fontfabric - NexaXBold.otf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45D221CAB6B000534688 /* Fontfabric - NexaXBold.otf */; };
+		BE7A45F121CAB6B000534688 /* Fontfabric - Nexa Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BE7A45D321CAB6B000534688 /* Fontfabric - Nexa Bold Italic.ttf */; };
+		FE86FDE84EFD5DD82774093A /* Pods_CountriesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 798F73EA6207948906DD8D7C /* Pods_CountriesUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +74,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2EE687E1AC9CC6F82170F239 /* Pods-CountriesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountriesTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountriesTests/Pods-CountriesTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6A6C526FBE618D4F24C53240 /* Pods-CountriesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountriesTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountriesTests/Pods-CountriesTests.release.xcconfig"; sourceTree = "<group>"; };
+		798F73EA6207948906DD8D7C /* Pods_CountriesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountriesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		840A929FA160A9F63CEF5109 /* Pods-Countries.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Countries/Pods-Countries.debug.xcconfig"; sourceTree = "<group>"; };
+		9319F0C51AE4AE500FCEFEE7 /* Pods-CountriesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountriesUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B40B916B69A5C63CD43F4474 /* Pods_Countries.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Countries.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE27568321CB6F0B002BCB23 /* MappedCountry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MappedCountry.swift; sourceTree = "<group>"; };
+		BE27568521CBAA14002BCB23 /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
+		BE27568B21CC02F0002BCB23 /* Country+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BE27568C21CC02F0002BCB23 /* Country+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Country+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BE7A457B21C8FEEF00534688 /* Countries.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Countries.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7A457E21C8FEEF00534688 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BE7A458021C8FEEF00534688 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +98,41 @@
 		BE7A459D21C8FEF500534688 /* CountriesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE7A45A121C8FEF500534688 /* CountriesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesUITests.swift; sourceTree = "<group>"; };
 		BE7A45A321C8FEF500534688 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE7A45AF21C9358D00534688 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
+		BE7A45B121C93D4400534688 /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		BE7A45B621CAB6B000534688 /* Fontfabric - NexaBlackItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaBlackItalic.otf"; sourceTree = "<group>"; };
+		BE7A45B721CAB6B000534688 /* Fontfabric - NexaHeavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaHeavy.otf"; sourceTree = "<group>"; };
+		BE7A45B821CAB6B000534688 /* Fontfabric - NexaXBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaXBoldItalic.otf"; sourceTree = "<group>"; };
+		BE7A45B921CAB6B000534688 /* Fontfabric - NexaBookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaBookItalic.otf"; sourceTree = "<group>"; };
+		BE7A45BA21CAB6B000534688 /* Fontfabric - Nexa Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Light.ttf"; sourceTree = "<group>"; };
+		BE7A45BB21CAB6B000534688 /* Fontfabric - Nexa Light Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Light Italic.ttf"; sourceTree = "<group>"; };
+		BE7A45BC21CAB6B000534688 /* Fontfabric - Nexa Heavy Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Heavy Italic.ttf"; sourceTree = "<group>"; };
+		BE7A45BD21CAB6B000534688 /* Fontfabric - Nexa Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Heavy.ttf"; sourceTree = "<group>"; };
+		BE7A45BE21CAB6B000534688 /* Fontfabric - NexaLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaLightItalic.otf"; sourceTree = "<group>"; };
+		BE7A45BF21CAB6B000534688 /* Fontfabric - NexaHeavyItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaHeavyItalic.otf"; sourceTree = "<group>"; };
+		BE7A45C021CAB6B000534688 /* Fontfabric - NexaLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaLight.otf"; sourceTree = "<group>"; };
+		BE7A45C121CAB6B000534688 /* Fontfabric - NexaBoldItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaBoldItalic.otf"; sourceTree = "<group>"; };
+		BE7A45C221CAB6B000534688 /* Fontfabric - Nexa-RegularItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa-RegularItalic.otf"; sourceTree = "<group>"; };
+		BE7A45C321CAB6B000534688 /* Fontfabric - NexaThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaThinItalic.otf"; sourceTree = "<group>"; };
+		BE7A45C421CAB6B000534688 /* Fontfabric - NexaBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaBlack.otf"; sourceTree = "<group>"; };
+		BE7A45C521CAB6B000534688 /* Fontfabric - Nexa Thin Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Thin Italic.ttf"; sourceTree = "<group>"; };
+		BE7A45C621CAB6B000534688 /* Fontfabric - Nexa.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa.ttf"; sourceTree = "<group>"; };
+		BE7A45C721CAB6B000534688 /* Fontfabric - NexaThin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaThin.otf"; sourceTree = "<group>"; };
+		BE7A45C821CAB6B000534688 /* Fontfabric - Nexa Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Thin.ttf"; sourceTree = "<group>"; };
+		BE7A45C921CAB6B000534688 /* Fontfabric - Nexa Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Bold.ttf"; sourceTree = "<group>"; };
+		BE7A45CA21CAB6B000534688 /* Fontfabric - NexaBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaBold.otf"; sourceTree = "<group>"; };
+		BE7A45CB21CAB6B000534688 /* Fontfabric - Nexa Black Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Black Italic.ttf"; sourceTree = "<group>"; };
+		BE7A45CC21CAB6B000534688 /* Fontfabric - Nexa XBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa XBold.ttf"; sourceTree = "<group>"; };
+		BE7A45CD21CAB6B000534688 /* Fontfabric - Nexa Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Book.ttf"; sourceTree = "<group>"; };
+		BE7A45CE21CAB6B000534688 /* Fontfabric - NexaBook.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaBook.otf"; sourceTree = "<group>"; };
+		BE7A45CF21CAB6B000534688 /* Fontfabric - Nexa XBold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa XBold Italic.ttf"; sourceTree = "<group>"; };
+		BE7A45D021CAB6B000534688 /* Fontfabric - Nexa Book Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Book Italic.ttf"; sourceTree = "<group>"; };
+		BE7A45D121CAB6B000534688 /* Fontfabric - Nexa Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Black.ttf"; sourceTree = "<group>"; };
+		BE7A45D221CAB6B000534688 /* Fontfabric - NexaXBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - NexaXBold.otf"; sourceTree = "<group>"; };
+		BE7A45D321CAB6B000534688 /* Fontfabric - Nexa Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Fontfabric - Nexa Bold Italic.ttf"; sourceTree = "<group>"; };
+		CFDF1A614861AAFC1591ABE9 /* Pods-Countries.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Countries.release.xcconfig"; path = "Pods/Target Support Files/Pods-Countries/Pods-Countries.release.xcconfig"; sourceTree = "<group>"; };
+		CFE746B9C3214C5650D3AB49 /* Pods_CountriesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountriesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8C712FC3F8FEABB0871B33A /* Pods-CountriesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountriesUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountriesUITests/Pods-CountriesUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDDC47730E83518715175B9 /* Pods_Countries.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +148,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A5A99A075FE6D5C60C0F821 /* Pods_CountriesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE86FDE84EFD5DD82774093A /* Pods_CountriesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,10 +166,14 @@
 		BE7A457221C8FEEF00534688 = {
 			isa = PBXGroup;
 			children = (
+				BE27568B21CC02F0002BCB23 /* Country+CoreDataClass.swift */,
+				BE27568C21CC02F0002BCB23 /* Country+CoreDataProperties.swift */,
 				BE7A457D21C8FEEF00534688 /* Countries */,
 				BE7A459521C8FEF500534688 /* CountriesTests */,
 				BE7A45A021C8FEF500534688 /* CountriesUITests */,
 				BE7A457C21C8FEEF00534688 /* Products */,
+				CCD6FD2B8C600393684E0E7D /* Pods */,
+				CB84AED301AD312210C31788 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,8 +192,13 @@
 			children = (
 				BE7A457E21C8FEEF00534688 /* AppDelegate.swift */,
 				BE7A458021C8FEEF00534688 /* ViewController.swift */,
+				BE7A45AF21C9358D00534688 /* NetworkingManager.swift */,
+				BE27568521CBAA14002BCB23 /* ReachabilityManager.swift */,
+				BE7A45B121C93D4400534688 /* CountryDetailViewController.swift */,
+				BE27568321CB6F0B002BCB23 /* MappedCountry.swift */,
 				BE7A458221C8FEEF00534688 /* Main.storyboard */,
 				BE7A458821C8FEF500534688 /* Assets.xcassets */,
+				BE7A45B521CAB6B000534688 /* CustomFonts */,
 				BE7A458A21C8FEF500534688 /* LaunchScreen.storyboard */,
 				BE7A458D21C8FEF500534688 /* Info.plist */,
 				BE7A458521C8FEEF00534688 /* Countries.xcdatamodeld */,
@@ -128,6 +224,66 @@
 			path = CountriesUITests;
 			sourceTree = "<group>";
 		};
+		BE7A45B521CAB6B000534688 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				BE7A45B621CAB6B000534688 /* Fontfabric - NexaBlackItalic.otf */,
+				BE7A45B721CAB6B000534688 /* Fontfabric - NexaHeavy.otf */,
+				BE7A45B821CAB6B000534688 /* Fontfabric - NexaXBoldItalic.otf */,
+				BE7A45B921CAB6B000534688 /* Fontfabric - NexaBookItalic.otf */,
+				BE7A45BA21CAB6B000534688 /* Fontfabric - Nexa Light.ttf */,
+				BE7A45BB21CAB6B000534688 /* Fontfabric - Nexa Light Italic.ttf */,
+				BE7A45BC21CAB6B000534688 /* Fontfabric - Nexa Heavy Italic.ttf */,
+				BE7A45BD21CAB6B000534688 /* Fontfabric - Nexa Heavy.ttf */,
+				BE7A45BE21CAB6B000534688 /* Fontfabric - NexaLightItalic.otf */,
+				BE7A45BF21CAB6B000534688 /* Fontfabric - NexaHeavyItalic.otf */,
+				BE7A45C021CAB6B000534688 /* Fontfabric - NexaLight.otf */,
+				BE7A45C121CAB6B000534688 /* Fontfabric - NexaBoldItalic.otf */,
+				BE7A45C221CAB6B000534688 /* Fontfabric - Nexa-RegularItalic.otf */,
+				BE7A45C321CAB6B000534688 /* Fontfabric - NexaThinItalic.otf */,
+				BE7A45C421CAB6B000534688 /* Fontfabric - NexaBlack.otf */,
+				BE7A45C521CAB6B000534688 /* Fontfabric - Nexa Thin Italic.ttf */,
+				BE7A45C621CAB6B000534688 /* Fontfabric - Nexa.ttf */,
+				BE7A45C721CAB6B000534688 /* Fontfabric - NexaThin.otf */,
+				BE7A45C821CAB6B000534688 /* Fontfabric - Nexa Thin.ttf */,
+				BE7A45C921CAB6B000534688 /* Fontfabric - Nexa Bold.ttf */,
+				BE7A45CA21CAB6B000534688 /* Fontfabric - NexaBold.otf */,
+				BE7A45CB21CAB6B000534688 /* Fontfabric - Nexa Black Italic.ttf */,
+				BE7A45CC21CAB6B000534688 /* Fontfabric - Nexa XBold.ttf */,
+				BE7A45CD21CAB6B000534688 /* Fontfabric - Nexa Book.ttf */,
+				BE7A45CE21CAB6B000534688 /* Fontfabric - NexaBook.otf */,
+				BE7A45CF21CAB6B000534688 /* Fontfabric - Nexa XBold Italic.ttf */,
+				BE7A45D021CAB6B000534688 /* Fontfabric - Nexa Book Italic.ttf */,
+				BE7A45D121CAB6B000534688 /* Fontfabric - Nexa Black.ttf */,
+				BE7A45D221CAB6B000534688 /* Fontfabric - NexaXBold.otf */,
+				BE7A45D321CAB6B000534688 /* Fontfabric - Nexa Bold Italic.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		CB84AED301AD312210C31788 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B40B916B69A5C63CD43F4474 /* Pods_Countries.framework */,
+				CFE746B9C3214C5650D3AB49 /* Pods_CountriesTests.framework */,
+				798F73EA6207948906DD8D7C /* Pods_CountriesUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCD6FD2B8C600393684E0E7D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				840A929FA160A9F63CEF5109 /* Pods-Countries.debug.xcconfig */,
+				CFDF1A614861AAFC1591ABE9 /* Pods-Countries.release.xcconfig */,
+				2EE687E1AC9CC6F82170F239 /* Pods-CountriesTests.debug.xcconfig */,
+				6A6C526FBE618D4F24C53240 /* Pods-CountriesTests.release.xcconfig */,
+				9319F0C51AE4AE500FCEFEE7 /* Pods-CountriesUITests.debug.xcconfig */,
+				E8C712FC3F8FEABB0871B33A /* Pods-CountriesUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +291,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE7A45A621C8FEF500534688 /* Build configuration list for PBXNativeTarget "Countries" */;
 			buildPhases = (
+				D9EC55EFD7EBA305651B6416 /* [CP] Check Pods Manifest.lock */,
 				BE7A457721C8FEEF00534688 /* Sources */,
 				BE7A457821C8FEEF00534688 /* Frameworks */,
 				BE7A457921C8FEEF00534688 /* Resources */,
+				CA5268940311ABEF493908A3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +310,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE7A45A921C8FEF500534688 /* Build configuration list for PBXNativeTarget "CountriesTests" */;
 			buildPhases = (
+				2BEB7CEDEC09CAEA5763478B /* [CP] Check Pods Manifest.lock */,
 				BE7A458E21C8FEF500534688 /* Sources */,
 				BE7A458F21C8FEF500534688 /* Frameworks */,
 				BE7A459021C8FEF500534688 /* Resources */,
@@ -170,6 +329,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BE7A45AC21C8FEF500534688 /* Build configuration list for PBXNativeTarget "CountriesUITests" */;
 			buildPhases = (
+				A2EA87A6E2E129179D043A08 /* [CP] Check Pods Manifest.lock */,
 				BE7A459921C8FEF500534688 /* Sources */,
 				BE7A459A21C8FEF500534688 /* Frameworks */,
 				BE7A459B21C8FEF500534688 /* Resources */,
@@ -232,8 +392,38 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE7A45ED21CAB6B000534688 /* Fontfabric - Nexa XBold Italic.ttf in Resources */,
+				BE7A45F021CAB6B000534688 /* Fontfabric - NexaXBold.otf in Resources */,
+				BE7A45E821CAB6B000534688 /* Fontfabric - NexaBold.otf in Resources */,
+				BE7A45EA21CAB6B000534688 /* Fontfabric - Nexa XBold.ttf in Resources */,
+				BE7A45DC21CAB6B000534688 /* Fontfabric - NexaLightItalic.otf in Resources */,
+				BE7A45D521CAB6B000534688 /* Fontfabric - NexaHeavy.otf in Resources */,
 				BE7A458C21C8FEF500534688 /* LaunchScreen.storyboard in Resources */,
+				BE7A45DF21CAB6B000534688 /* Fontfabric - NexaBoldItalic.otf in Resources */,
+				BE7A45DB21CAB6B000534688 /* Fontfabric - Nexa Heavy.ttf in Resources */,
+				BE7A45EB21CAB6B000534688 /* Fontfabric - Nexa Book.ttf in Resources */,
+				BE7A45E721CAB6B000534688 /* Fontfabric - Nexa Bold.ttf in Resources */,
 				BE7A458921C8FEF500534688 /* Assets.xcassets in Resources */,
+				BE7A45E021CAB6B000534688 /* Fontfabric - Nexa-RegularItalic.otf in Resources */,
+				BE7A45E321CAB6B000534688 /* Fontfabric - Nexa Thin Italic.ttf in Resources */,
+				BE7A45E921CAB6B000534688 /* Fontfabric - Nexa Black Italic.ttf in Resources */,
+				BE7A45E421CAB6B000534688 /* Fontfabric - Nexa.ttf in Resources */,
+				BE7A45EC21CAB6B000534688 /* Fontfabric - NexaBook.otf in Resources */,
+				BE7A45D421CAB6B000534688 /* Fontfabric - NexaBlackItalic.otf in Resources */,
+				BE7A45DD21CAB6B000534688 /* Fontfabric - NexaHeavyItalic.otf in Resources */,
+				BE7A45E121CAB6B000534688 /* Fontfabric - NexaThinItalic.otf in Resources */,
+				BE7A45D721CAB6B000534688 /* Fontfabric - NexaBookItalic.otf in Resources */,
+				BE7A45E521CAB6B000534688 /* Fontfabric - NexaThin.otf in Resources */,
+				BE7A45F121CAB6B000534688 /* Fontfabric - Nexa Bold Italic.ttf in Resources */,
+				BE7A45D921CAB6B000534688 /* Fontfabric - Nexa Light Italic.ttf in Resources */,
+				BE7A45D621CAB6B000534688 /* Fontfabric - NexaXBoldItalic.otf in Resources */,
+				BE7A45E621CAB6B000534688 /* Fontfabric - Nexa Thin.ttf in Resources */,
+				BE7A45EF21CAB6B000534688 /* Fontfabric - Nexa Black.ttf in Resources */,
+				BE7A45E221CAB6B000534688 /* Fontfabric - NexaBlack.otf in Resources */,
+				BE7A45EE21CAB6B000534688 /* Fontfabric - Nexa Book Italic.ttf in Resources */,
+				BE7A45DE21CAB6B000534688 /* Fontfabric - NexaLight.otf in Resources */,
+				BE7A45D821CAB6B000534688 /* Fontfabric - Nexa Light.ttf in Resources */,
+				BE7A45DA21CAB6B000534688 /* Fontfabric - Nexa Heavy Italic.ttf in Resources */,
 				BE7A458421C8FEEF00534688 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,14 +444,99 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BEB7CEDEC09CAEA5763478B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CountriesTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A2EA87A6E2E129179D043A08 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CountriesUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA5268940311ABEF493908A3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Countries/Pods-Countries-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CocoaLumberjack/CocoaLumberjack.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SVGKit/SVGKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CocoaLumberjack.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVGKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Countries/Pods-Countries-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9EC55EFD7EBA305651B6416 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Countries-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		BE7A457721C8FEEF00534688 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				BE7A458121C8FEEF00534688 /* ViewController.swift in Sources */,
+				BE27568421CB6F0B002BCB23 /* MappedCountry.swift in Sources */,
+				BE7A45B021C9358D00534688 /* NetworkingManager.swift in Sources */,
+				BE27568621CBAA14002BCB23 /* ReachabilityManager.swift in Sources */,
 				BE7A458721C8FEEF00534688 /* Countries.xcdatamodeld in Sources */,
+				BE7A45B221C93D4400534688 /* CountryDetailViewController.swift in Sources */,
+				BE27568D21CC02F0002BCB23 /* Country+CoreDataClass.swift in Sources */,
 				BE7A457F21C8FEEF00534688 /* AppDelegate.swift in Sources */,
+				BE27568E21CC02F0002BCB23 /* Country+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -434,17 +709,20 @@
 		};
 		BE7A45A721C8FEF500534688 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840A929FA160A9F63CEF5109 /* Pods-Countries.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HVW557N3C9;
+				DEVELOPMENT_TEAM = U38FRT5GL5;
 				INFOPLIST_FILE = Countries/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Countries;
+				PRODUCT_BUNDLE_IDENTIFIER = com.architex.prod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -452,17 +730,20 @@
 		};
 		BE7A45A821C8FEF500534688 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFDF1A614861AAFC1591ABE9 /* Pods-Countries.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = HVW557N3C9;
+				DEVELOPMENT_TEAM = U38FRT5GL5;
 				INFOPLIST_FILE = Countries/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.Countries;
+				PRODUCT_BUNDLE_IDENTIFIER = com.architex.prod;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -470,6 +751,7 @@
 		};
 		BE7A45AA21C8FEF500534688 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2EE687E1AC9CC6F82170F239 /* Pods-CountriesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -491,6 +773,7 @@
 		};
 		BE7A45AB21C8FEF500534688 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A6C526FBE618D4F24C53240 /* Pods-CountriesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +795,7 @@
 		};
 		BE7A45AD21C8FEF500534688 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9319F0C51AE4AE500FCEFEE7 /* Pods-CountriesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -532,6 +816,7 @@
 		};
 		BE7A45AE21C8FEF500534688 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8C712FC3F8FEABB0871B33A /* Pods-CountriesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
