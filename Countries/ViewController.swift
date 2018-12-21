@@ -23,6 +23,7 @@ class CountryCell: UITableViewCell{
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
     
+    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -123,6 +124,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     
     // MARK: - UISearchBarDelegates
+    
+    func searchBarSearchButtonClicked(_ searchBar: UISearchBar)
+    {
+        searchBar.endEditing(true)
+    }
+    
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String)
     {
         checkInternetConnection()

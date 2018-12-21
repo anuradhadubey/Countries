@@ -76,7 +76,7 @@
                                                             </constraints>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWW-AE-iH5">
-                                                            <rect key="frame" x="111" y="6" width="40.5" height="42"/>
+                                                            <rect key="frame" x="111" y="6" width="37" height="42"/>
                                                             <fontDescription key="fontDescription" name="Nexa" family="Nexa" pointSize="15"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -148,6 +148,7 @@
                     <navigationItem key="navigationItem" id="vIU-fj-yOe"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="searchBar" destination="esz-an-l1L" id="ybr-UW-6tH"/>
                         <outlet property="searchDisplayController" destination="k49-fn-Mzy" id="9Pw-s8-808"/>
                         <outlet property="tableView" destination="8G2-wt-bSC" id="q1T-NT-kiU"/>
                     </connections>
